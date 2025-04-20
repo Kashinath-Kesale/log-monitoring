@@ -1,0 +1,20 @@
+[{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.175748+05:30", "instrumentation_scope" : "robot_events", "host_name" : "4c0101bc0a9f","severity_text":"INFO" ,"severity_number" : "20"  ,"event_timestamp": "1727914033175709009" ,"body": "Robot Event - eventName='queueExit/feedingEntry' publishTimeStamp=1727914033170 bridgeTimeStamp=1727914033172 LoadStatus='empty' state='idle' grid_type='feeding' event_retry_count=1 event_trace_id='710017f8-811b-11ef-b215-02420a45459a' load_approval_payload={} attributes={'robotId': 'AA062', 'hardwareId': 'AA062', 'feederId': 'none', 'parcelId': 'none', 'errorState': 'none'}","resource" : "API-Gateway" ,"span_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" ,"trace_id": "robot_events" },
+{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.175917+05:30", "instrumentation_scope" : "robot_utils", "host_name" : "4c0101bc0a9f","severity_text":"INFO" ,"severity_number" : "20"  ,"event_timestamp": "1727914033175893046" ,"body": "Sending robot event update payload to Robot service : {'eventName': 'queueExit/feedingEntry', 'publishTimeStamp': 1727914033170, 'bridgeTimeStamp': 1727914033172, 'LoadStatus': 'empty', 'state': 'idle', 'grid_type': 'feeding', 'event_retry_count': 1, 'event_trace_id': '710017f8-811b-11ef-b215-02420a45459a', 'load_approval_payload': {}, 'attributes': {'robotId': 'AA062', 'hardwareId': 'AA062', 'feederId': 'none', 'parcelId': 'none', 'errorState': 'none'}}","resource" : "API-Gateway" ,"span_id": "d6faf8f2-4ac4-46bf-bfab-ee0f323258d3" ,"trace_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" },
+{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.185492+05:30", "instrumentation_scope" : "robot_utils", "host_name" : "4c0101bc0a9f","severity_text":"INFO" ,"severity_number" : "20"  ,"event_timestamp": "1727914033185440488" ,"body": "Robot Event Updated to Service","resource" : "API-Gateway" ,"span_id": "d6faf8f2-4ac4-46bf-bfab-ee0f323258d3" ,"trace_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" },
+{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.186399+05:30", "instrumentation_scope" : "robot_utils", "host_name" : "4c0101bc0a9f","severity_text":"CRITICAL" ,"severity_number" : "50"  ,"event_timestamp": "1727914033186365062" ,"body": "!!!! ERROR_ID= 6000 REDIS CONNECTION FAILED !!!!","resource" : "API-Gateway" ,"span_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" ,"trace_id": "get_feeder_obj" },
+{
+    "observed_timestamp": "1727914033000000003",
+    "observed_timestamp_rfc3339": "2024-10-03T05:37:13.186532+05:30",
+    "instrumentation_scope": "robot_events",
+    "host_name": "4c0101bc0a9f",
+    "severity_text": "CRITICAL",
+    "severity_number": "50",
+    "event_timestamp": "1727914033186508520",
+    "body": "name 'spanId' is not defined",
+    "resource": "API-Gateway",
+    "span_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605",
+    "trace_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605"
+  },
+{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.186969+05:30", "instrumentation_scope" : "main", "host_name" : "4c0101bc0a9f","severity_text":"INFO" ,"severity_number" : "20"  ,"event_timestamp": "1727914033186938510" ,"body": "Request: Processing Time : 12","resource" : "API-Gateway" ,"span_id": "73573538-1ac9-42c6-9ae4-a5a4620d9f4c" ,"trace_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" },
+{"observed_timestamp" : "1727914033000000003" , "observed_timestamp_rfc3339": "2024-10-03T05:37:13.194034+05:30", "instrumentation_scope" : "utils", "host_name" : "4c0101bc0a9f","severity_text":"INFO" ,"severity_number" : "20"  ,"event_timestamp": "1727914033193985712" ,"body": "all_request table updated :e76e7bab-0576-4771-b5e8-1b29b4fbb605","resource" : "API-Gateway" ,"span_id": "0b8b40f8-db10-494e-8003-1ddb28b4c0aa" ,"trace_id": "e76e7bab-0576-4771-b5e8-1b29b4fbb605" }
+]
