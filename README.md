@@ -35,5 +35,11 @@ Desktop/
 git clone https://github.com/Kashinath-Kesale/log-monitoring.git
 cd log-monitoring
 
+
 ## 🧪 STEP 2: Start the Stack
+
+Run the following command to start the Docker containers:
+
+```bash
 docker-compose up --build
+
