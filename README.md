@@ -56,11 +56,34 @@ Open your browser and go to: [http://localhost:3000](http://localhost:3000)
 🔍 Sample Log Queries (LogQL)
 Use these in the Explore tab in Grafana:
 
-logql
-Copy
-Edit
 {job="robot_logs"}
 {job="robot_logs", severity_text="CRITICAL"}
 {job="robot_logs", instrumentation_scope="robot_utils"}
 {job="robot_logs"} |= "error"
+
+✨ Features
+Ingests structured logs in JSON Lines (JSONL) format
+
+Filters and queries based on:
+
+severity_text
+
+instrumentation_scope
+
+observed_timestamp_rfc3339
+
+Real-time log visualization and dashboard panels
+
+Dockerized setup for portability and reproducibility
+
+CI/CD-ready with GitHub Actions integration (optional)
+
+🧠 Learning Outcomes
+Docker orchestration of observability tools
+
+Promtail pipeline stages and log label extraction
+
+Working with real-time log metrics in Grafana
+
+Practical use of LogQL for log filtering and monitoring
 
