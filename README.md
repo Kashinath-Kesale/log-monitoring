@@ -53,3 +53,14 @@ Open your browser and go to: [http://localhost:3000](http://localhost:3000)
 **Add a Loki data source:**
 - **URL:** `http://loki:3100`
 
+🔍 Sample Log Queries (LogQL)
+Use these in the Explore tab in Grafana:
+
+logql
+Copy
+Edit
+{job="robot_logs"}
+{job="robot_logs", severity_text="CRITICAL"}
+{job="robot_logs", instrumentation_scope="robot_utils"}
+{job="robot_logs"} |= "error"
+
