@@ -41,6 +41,7 @@ Run the following command to start the Docker containers:
 
 ```bash
 docker-compose up --build
+
 ### 3. Access Grafana
 
 Open your browser and go to: [http://localhost:3000](http://localhost:3000)
