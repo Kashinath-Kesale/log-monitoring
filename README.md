@@ -25,7 +25,6 @@ Desktop/
         └── workflows/
             └── docker-deploy.yml
 
----
 
 ## ▶️ Getting Started
 
@@ -42,4 +41,14 @@ Run the following command to start the Docker containers:
 
 ```bash
 docker-compose up --build
+### 3. Access Grafana
+
+Open your browser and go to: [http://localhost:3000](http://localhost:3000)
+
+**Login credentials:**
+- **Username:** `admin`
+- **Password:** `admin`
+
+**Add a Loki data source:**
+- **URL:** `http://loki:3100`
 
