@@ -16,3 +16,23 @@ This project sets up a **Dockerized log aggregation and visualization system** u
 
 ## 📁 Project Structure
 
+Desktop/
+└── log-monitoring/
+    ├── docker-compose.yml
+    ├── promtail-config.yml
+    ├── logs/sample.json
+    └── .github/
+        └── workflows/
+            └── docker-deploy.yml
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Kashinath-Kesale/log-monitoring.git
+cd log-monitoring
+## 2. Start the Stack
+docker-compose up --build
