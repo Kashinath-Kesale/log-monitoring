@@ -34,5 +34,5 @@ Desktop/
 ```bash
 git clone https://github.com/Kashinath-Kesale/log-monitoring.git
 cd log-monitoring
-## 2. Start the Stack
+### 2. Start the Stack
 docker-compose up --build
