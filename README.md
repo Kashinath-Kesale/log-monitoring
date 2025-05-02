@@ -6,25 +6,29 @@ This project sets up a **Dockerized log aggregation and visualization system** u
 
 ## 🚀 Tech Stack
 
-- **Promtail** – Log collector and shipper
-- **Loki** – Centralized log aggregation backend
-- **Grafana** – Log visualization and dashboard
-- **Docker & Docker Compose** – Container orchestration
+- **Promtail** – Log collector and shipper  
+- **Loki** – Centralized log aggregation backend  
+- **Grafana** – Log visualization and dashboard  
+- **Docker & Docker Compose** – Container orchestration  
 - **GitHub Actions** – CI/CD automation (optional)
 
 ---
 
 ## 📁 Project Structure
 
+```
 Desktop/
 └── log-monitoring/
     ├── docker-compose.yml
     ├── promtail-config.yml
-    ├── logs/sample.json
+    ├── logs/
+    │   └── sample.json
     └── .github/
         └── workflows/
             └── docker-deploy.yml
+```
 
+---
 
 ## ▶️ Getting Started
 
@@ -33,14 +37,19 @@ Desktop/
 ```bash
 git clone https://github.com/Kashinath-Kesale/log-monitoring.git
 cd log-monitoring
+```
 
+---
 
-## 🧪 STEP 2: Start the Stack
+### 🧪 STEP 2: Start the Stack
 
-Run the following command to start the Docker containers:
+Run the following command to build and start the Docker containers:
 
 ```bash
 docker-compose up --build
+```
+
+---
 
 ### 3. Access Grafana
 
@@ -53,37 +62,37 @@ Open your browser and go to: [http://localhost:3000](http://localhost:3000)
 **Add a Loki data source:**
 - **URL:** `http://loki:3100`
 
-🔍 Sample Log Queries (LogQL)
-Use these in the Explore tab in Grafana:
+---
 
+## 🔍 Sample Log Queries (LogQL)
+
+Use these in the **Explore** tab in Grafana:
+
+```logql
 {job="robot_logs"}
 {job="robot_logs", severity_text="CRITICAL"}
 {job="robot_logs", instrumentation_scope="robot_utils"}
 {job="robot_logs"} |= "error"
+```
 
-✨ Features
-Ingests structured logs in JSON Lines (JSONL) format
+---
 
-Filters and queries based on:
+## ✨ Features
 
-severity_text
+- Ingests structured logs in **JSON Lines (JSONL)** format  
+- Filters and queries based on:
+  - `severity_text`
+  - `instrumentation_scope`
+  - `observed_timestamp_rfc3339`
+- Real-time log visualization and custom dashboard panels  
+- Dockerized setup for portability and reproducibility  
+- CI/CD-ready with GitHub Actions integration (optional)
 
-instrumentation_scope
+---
 
-observed_timestamp_rfc3339
+## 🧠 Learning Outcomes
 
-Real-time log visualization and dashboard panels
-
-Dockerized setup for portability and reproducibility
-
-CI/CD-ready with GitHub Actions integration (optional)
-
-🧠 Learning Outcomes
-Docker orchestration of observability tools
-
-Promtail pipeline stages and log label extraction
-
-Working with real-time log metrics in Grafana
-
-Practical use of LogQL for log filtering and monitoring
-
+- Docker orchestration of observability tools  
+- Promtail pipeline stages and log label extraction  
+- Working with real-time log metrics in Grafana  
+- Practical use of LogQL for log filtering and monitoring
