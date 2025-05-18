@@ -86,7 +86,7 @@ Use these in the **Explore** tab in Grafana:
   - `observed_timestamp_rfc3339`
 - Real-time log visualization and custom dashboard panels  
 - Dockerized setup for portability and reproducibility  
-- CI/CD-ready with GitHub Actions integration (optional)
+- CI/CD-ready with GitHub Actions integration
 
 ---
 
