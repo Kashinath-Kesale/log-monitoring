@@ -10,7 +10,7 @@ This project sets up a **Dockerized log aggregation and visualization system** u
 - **Loki** – Centralized log aggregation backend  
 - **Grafana** – Log visualization and dashboard  
 - **Docker & Docker Compose** – Container orchestration  
-- **GitHub Actions** – CI/CD automation (optional)
+- **GitHub Actions** – CI/CD automation
 
 ---
 
